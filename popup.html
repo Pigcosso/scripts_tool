@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <title>script-tools</title>
+    <link rel="stylesheet" href="popup.css">
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <!-- 导航按钮 -->
+                <button id="scriptTools" class="nav-btn active" data-page="page1">脚本执行</button>
+                <button id="backUrl" class="nav-btn" data-page="page2">工具2</button>
+                <button class="nav-btn" data-page="page3">工具3</button>
+            </div>
+        <div class="content">
+            <!-- 内容区域 -->
+            <div id="page1" class="page active">
+                <textarea id="scriptInput" class="input-textarea" placeholder="input request" rows="5"></textarea>
+                <div class="number-inputs">
+                    <div class="input-group">
+                        <label for="executionCount">执行次数：</label>
+                        <input type="number" id="executionCount" min="1" value="1" step="1" class="number-input">
+                    </div>
+                    <div class="input-group">
+                        <label for="executionInterval">执行间隔（ms）：</label>
+                        <input type="number" id="executionInterval" min="0" value="100" step="10" class="number-input">
+                    </div>
+                </div>
+                <button id="scriptButton" class="confirm-button">确认</button>
+            </div>
+            <div id="page2" class="page">
+                <h2>工具2</h2>
+                <p>思考开发中...</p>
+            </div>
+            <div id="page3" class="page">
+                <h2>工具3</h2>
+                <p>思考开发中...</p>
+            </div>
+        </div>
+  </div>
+  <script src="popup.js"></script>
+    </body>
+</html>

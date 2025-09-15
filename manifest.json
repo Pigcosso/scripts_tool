@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "script-tools",
+    "version": "1.0.0",
+    "description": "you can fetch the request and use it to run it more times",
+    "icons": {
+      "16": "script.png",
+      "48": "script.png",
+      "128": "script.png"
+    },
+    "action": {
+        "default_title": "click to view a popup",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "*://*/*"
+    ]
+  }
